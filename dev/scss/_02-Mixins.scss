@@ -1,0 +1,54 @@
+/* MEDIA QUERYS */
+
+@mixin iphone() {
+    @media only screen and (min-width: #{$iphone}) {
+        @content;
+    }
+}
+
+@mixin telefono() {
+    @media only screen and (min-width: #{$telefono}) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media only screen and (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop() {
+    @media only screen and (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+
+/* BOX-MODEL, BOX-SIZING */
+
+@mixin box-sizing($margin, $padding, $box-model) {
+    margin: $margin;
+    padding: $padding;
+    box-sizing: $box-model;
+}
+
+
+/* BOTONES */
+
+@mixin boton($bgColor, $color) {
+    background-color: $bgColor;
+    color: $color;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem 0;
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}

@@ -1,0 +1,8 @@
+.logotipo {
+    margin-top: .5rem;
+    max-width: 120px;
+    @include tablet() {
+        margin-top: .8rem;
+        margin-left: 2%;
+    }
+}

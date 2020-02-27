@@ -1,0 +1,42 @@
+.site-footer {
+    border-top: 1px solid $color_gris_medio;
+    padding: 2rem 0 4rem 0;
+    @include tablet() {
+        border-top: unset;
+        background-color: rgba($color: #000000, $alpha: 0.85);
+        padding: 1rem 0 3rem 0;
+    }
+    .contenedor {
+        @include tablet() {
+            max-width: 50%;
+        }
+    }
+    .menu-footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        a {
+            flex: 0 0 auto;
+            font-size: .8rem;
+            margin-right: 2rem;
+            padding: .5rem 0;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+    select {
+        appearance: none;
+        margin-top: 2rem;
+        padding: 1rem 3rem;
+        border: solid 1px $color_gris_claro;
+        font-size: .8rem;
+        background-color: $color_negro;
+        color: $color_gris_medio;
+        border-radius: $radius;
+        -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+        -o-border-radius: $radius;
+    }
+}

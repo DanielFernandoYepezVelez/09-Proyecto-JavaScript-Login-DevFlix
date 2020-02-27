@@ -1,0 +1,35 @@
+html {
+    @include box-sizing(0, 0, border-box);
+}
+
+*,
+*::after,
+*::before {
+    @include box-sizing(0, 0, inherit);
+}
+
+body {
+    background-color: $color_negro;
+    font-family: $fuente_principal;
+    color: $color_gris_medio;
+    @include tablet {
+        background-color: unset; //Me quita el color de fondo
+        background-image: url("../img/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $color_gris_medio;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+}
